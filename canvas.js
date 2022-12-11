@@ -4,8 +4,8 @@ function setup() {
     myCanvas.parent("wrap");
   noStroke();
   rectMode(CENTER);
-  img1 = loadImage('./firebending.png');
-  img2 = loadImage('./airbending.png');
+  img1 = loadImage('firebending.png');
+  img2 = loadImage('airbending.png');
 }
 
 function draw() {
