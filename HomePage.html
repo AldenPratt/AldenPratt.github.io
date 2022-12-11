@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+  <Title>Home Page</Title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="stylesheet.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.4.2/vue.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.0/p5.js"></script>
+  <script src="canvas.js"></script>
+</head>
+
+<header>
+  <h1>Pratt Game Studios</h1>
+  <ul>
+    <li><h3><a href="HomePage.html">Home</a></h3></li>
+    <li><h3><a href="AboutUs.html">About Us</a></h3></li>
+    <li><h3><a href="FAQ.html">FAQ</a></h3></li>
+    <li><h3><a href="Projects.html">Projects</a></h3></li>
+    <li><h3><a href="Careers.html">Careers</a></h3></li>
+    <li><h3><a href="ContactUs.html">Contact Us</a></h3></li>
+  </ul>
+</header>
+
+<main>
+
+  <div id="wrap">
+  <h1>Welcome to the frontier of game design</h1>
+
+  <div id="app">
+    <img :src="myImage" @mouseover="changeImage(imageNumber++)" width="400px" height="400px"/>
+    <h2>{{benderType}}</h2>
+  </div>
+
+  <script>
+   var app = new Vue({
+     el: '#app',
+     data() {
+       return {
+         benderType: "Air",
+         imageNumber: 0,
+         myImage: "airbending.png"}
+     },
+
+     methods: {
+     changeImage(imageNumber){
+       if (imageNumber % 4 == 0)
+       {
+         this.myImage = "airbending.png",
+         this.benderType = "Air"
+
+       }
+       if (imageNumber % 4 == 1)
+       {
+         this.myImage = "waterbending.png",
+         this.benderType = "Water"
+       }
+       if (imageNumber % 4 == 2)
+       {
+         this.myImage = "earthbending.png",
+         this.benderType = "Earth"
+       }
+       if (imageNumber % 4 == 3)
+       {
+         this.myImage = "firebending.png",
+         this.benderType = "Fire"
+       }
+     }
+   }
+   })
+  </script>
+
+</div>
+</main>
+
+
+</html>

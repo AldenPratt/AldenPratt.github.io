@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+  <Title>Home Page</Title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="stylesheet.css">
+  <script src="ContactUsValidation.js"></script>
+</head>
+
+<header>
+  <h1>Pratt Game Studios</h1>
+  <ul>
+    <li><h3><a href="HomePage.html">Home</a></h3></li>
+    <li><h3><a href="AboutUs.html">About Us</a></h3></li>
+    <li><h3><a href="FAQ.html">FAQ</a></h3></li>
+    <li><h3><a href="Projects.html">Projects</a></h3></li>
+    <li><h3><a href="Careers.html">Careers</a></h3></li>
+    <li><h3><a href="ContactUs.html">Contact Us</a></h3></li>
+  </ul>
+</header>
+
+<main>
+
+<div id="wrap">
+
+<h3>We are always here to answer any of your questions.<h3>
+<h4>  Please fill out the form below<h4>
+
+<form onsubmit="return validateForm()">
+
+  <label>First Name: </label>
+  <input type="text" id="firstName" name="firstName" required>
+
+  <br><br>
+
+  <label>Last Name: </label>
+  <input type="text" id="lastName" name="lastName" required>
+
+  <br><br>
+
+  <label>Email: </label>
+  <input type="text" id="email" name="email" required>
+
+  <br><br>
+
+  <label>Message: </label><br>
+  <textarea rows="10" cols="60" name="text" placeholder="Enter message"></textarea>
+
+<br><br>
+ <input type="submit" value="Submit">
+
+</div>
+
+</main>
+
+  </html>

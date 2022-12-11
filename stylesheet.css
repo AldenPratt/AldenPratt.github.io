@@ -1,0 +1,108 @@
+
+#wrap
+{
+  width: 1000px;
+  margin: 0 auto;
+  background: #c6c6c6;
+}
+
+form {
+  padding-left: 30px;
+}
+
+body {
+  background-color: #FFFFFF
+}
+
+header {
+  background-color: #FFFF00
+}
+
+h1 {
+  text-align:center;
+}
+
+h2 {
+  margin: 40px;
+}
+
+table {
+  border: 3px solid;
+}
+
+h3 {
+  color: #FF02FF;
+  font-family:sans-serif;
+}
+
+img {
+  border-style:groove;
+  border-radius: 5px;
+  border-color: #000010;
+  float:left;
+  margin: 0 15px 0 15px
+}
+
+figure {
+  display: inline-block;
+  float:right;
+}
+
+.chef {
+  border-style: none;
+}
+
+figcaption {
+  text-align: center
+}
+
+p {
+  font-size: 16pt;
+}
+
+ul {
+  columns: 6;
+  list-style-type: square;
+  list-style-position: outside;
+}
+
+li {
+  color: #04FF04
+}
+
+.li1 {
+  margin-bottom: 100px;
+}
+
+footer {
+  position:fixed; bottom: 0;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  padding: 8px;
+}
+
+tr:hover {
+  background-color: white;
+}
+
+/* When we resize the screen, we will change the
+   background color of the header to read,
+   change font color of the footer to white,
+   and change the font of our table items to
+   monospace. */
+@media only screen and (max-width: 1500px)
+{
+  header {
+    background-color: #FF0505
+  }
+
+  footer{
+    color: #FFFFFF
+  }
+
+  td {
+    font-family: monospace;
+  }
+}
