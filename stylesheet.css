@@ -4,6 +4,20 @@
   width: 1000px;
   margin: 0 auto;
   background: #c6c6c6;
+  padding-left: 45px;
+  padding-right: 45px;
+  padding-top: 45px;
+  padding-bottom: 45px;
+}
+
+#app
+{
+    background-color: #b0b0b0;
+    padding-left: 20px;
+    padding-right:20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    height: 440px;
 }
 
 form {
@@ -11,19 +25,29 @@ form {
 }
 
 body {
-  background-color: #020202
+  background-image: url("space.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 header {
   background-color: #FFFF00
 }
 
+@font-face{
+  font-family: pixelboy; src: url('pixeboy-font\\Pixeboy-z8XGD.ttf');
+}
+
 h1 {
   text-align:center;
+  font-family: pixelboy;
+  font-size: 128px;
 }
 
 h2 {
-  margin: 40px;
+  text-align:center;
+  font-family: pixelboy;
+  font-size: 40px;
 }
 
 table {
@@ -57,11 +81,11 @@ figcaption {
 }
 
 p {
-  font-size: 16pt;
+  font-size: 24pt;
 }
 
 ul {
-  columns: 6;
+  columns: 5;
   list-style-type: square;
   list-style-position: outside;
 }
@@ -76,6 +100,12 @@ li {
 
 footer {
   position:fixed; bottom: 0;
+  background-color: #FFFF00;
+  width: ;
+  padding-left: 45;
+  padding-right: 45;
+  padding-top: 2;
+  padding-bottom: 2;
 }
 
 td, th {

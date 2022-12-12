@@ -5,7 +5,6 @@
   <Title>Home Page</Title>
   <meta charset="UTF-8">
   <link rel="stylesheet" href="stylesheet.css">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.4.2/vue.min.js"></script>
 </head>
 
 <header>
@@ -14,40 +13,10 @@
     <li><h3><a href="HomePage.html">Home</a></h3></li>
     <li><h3><a href="AboutUs.html">About Us</a></h3></li>
     <li><h3><a href="FAQ.html">FAQ</a></h3></li>
-    <li><h3><a href="Projects.html">Projects</a></h3></li>
     <li><h3><a href="Careers.html">Careers</a></h3></li>
     <li><h3><a href="ContactUs.html">Contact Us</a></h3></li>
   </ul>
 </header>
-
-<script>
-var app = new Vue({
-  el: '#app',
-  data() {
-    return {
-    fields: ['Title', 'Description', 'Location', 'Requirements'],
-    gridData: [
-      { Title: 'Senior Software Engineer',
-        Description: "Lead a team of software engineers to deliver software solutions, while interfacing with management.",
-        Location: "Middletown, RI",
-        Requirements: "Strong leadership skills, extensive experience using C#. Preferred 4+ years of professional experience."
-      },
-      { Title: 'Senior Graphics Designer',
-        Description: "Lead a team of graphics designers to deliver stunning game art.",
-        Location: "Middletown, RI",
-        Requirements: "Creativity, leadership, we also request a portfolio of past work."
-      },
-      { Title: 'Senior Software Engineer',
-        Description: "Engage with a team of software engineers to code something magical.",
-        Location: "Middletown, RI",
-        Requirements: "BS in Computer Science"
-      }
-    ]
-  }
-  }
-})
-
-</script>
 
 <main>
 
@@ -56,11 +25,32 @@ var app = new Vue({
   <h4>Below are open positions for Pratt Game Studios.<h4>
   <h4>Please email careers@PGS.com with inquiries.<h4>
 
-<div id='app'>
-
-  <b-table striped hover :items="gridData" :fields="fields"></b-table>
-
-</div>
+    <table>
+      <tr>
+        <th>Title</th>
+        <th>Description<th>
+        <th>Location</th>
+        <th>Requirements</th>
+      </tr>
+      <tr>
+        <td>Senior Software Engineer</td>
+        <td>Lead a team of software engineers to deliver software solutions, while interfacing with management.<td>
+        <td>Middletown, RI</td>
+        <td>Strong leadership skills, extensive experience using C#. Preferred 4+ years of professional experience.</td>
+      </tr>
+      <tr>
+        <td>Lead Graphics Designer</td>
+        <td>Lead a team of graphics designers to deliver stunning game art.<td>
+        <td>Middletown, RI</td>
+        <td>Creativity, leadership, we also request a portfolio of past work.</td>
+      </tr>
+      <tr>
+        <td>Associate Software Engineer</td>
+        <td>Engage with a team of software engineers to code something magical.<td>
+        <td>Remote</td>
+        <td>BS in Computer Science</td>
+      </tr>
+    </table>
 </div>
 
 

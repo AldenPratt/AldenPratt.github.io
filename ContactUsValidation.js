@@ -15,6 +15,7 @@ function validateForm()
   isValid &= checkNameLetters(lastName, "Please only enter letters for last name");
 
   isValid &= checkEmail(email, "Please enter a valid email");
+
 }
 
 // Given a name, check if the name contains
